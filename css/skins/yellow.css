@@ -1,0 +1,60 @@
+/* =================================================================== */
+/* Yellow #ffb400
+====================================================================== */
+
+.accent,
+.social ul li a:hover,
+.leftbottom > a:hover,
+.meta i {
+    color: #ffb400;
+}
+
+.btn-primary-rtl,
+.yes,
+.btn-primary,
+.home .home-content h1:before,
+.title,
+.squares div:nth-child(n+10),
+.arrow:before,
+.arrow:after,
+.arrow-inner:after,
+.arrow-inner:before,
+.home .home-content p:before,
+.portfolio-grid .heading p:before,
+.about .box-stats p:before,
+.portfolio-items .details .heading > div,
+.portfolio-items .details .heading > div:before,
+.btn-secondary:before,
+.btn-secondary:hover,
+.freelance>span:before,
+.layers > div:first-child,
+.layers > div:nth-child(3),
+.layers > div:nth-child(5),
+.leftbottom > a:before,
+.blog-page .blog-content .post .category,
+.blog-page .loadmore span {
+    background-color: #ffb400;
+}
+
+.portfolio-items .details .heading > div:after,
+.loader {
+    border-top-color: #ffb400;
+}
+
+.arrow svg.hover path,
+.social ul.social li a:hover svg,
+.skin svg path {
+    fill: #ffb400;
+}
+
+.about .content .img-container:before {
+    border: 4px solid #ffb400;
+}
+
+@media (max-width: 767px)  {
+
+    .about .box-stats h4:after {
+        color: #ffb400;
+    }
+
+}

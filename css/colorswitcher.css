@@ -1,0 +1,148 @@
+.switcher {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    width: 242px;
+    height: 150px;
+    background: white;
+    z-index: 11;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    transform: translateX(-242px);
+    transition: .4s;
+}
+.rtl .switcher {
+	right:0;
+	left:initial;
+	transform: translateX(242px);
+	border-left: 1px solid #ccc;
+    border-right: 0;
+}
+.dark .switcher {
+    background: #333;
+    border: 1px solid #555;
+    border-left: 0;
+}
+.dark.rtl .switcher {
+	border: 1px solid #555;
+    border-right: 0;
+}
+
+.switcher.show-switcher {
+    transform: translateX(0);
+}
+
+.switcher > p {
+    display: block;
+    text-align: center;
+    margin: 0 0 15px;
+    font-weight: 500;
+}
+
+.switcher > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.switcher > div span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px 10px;
+    display: block;
+}
+
+@keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+#toggle-switcher {
+    display: block;
+    width: 54px;
+    background: white;
+    position: absolute;
+    right: -54px;
+    top: -1px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    cursor: pointer;
+    text-align: center;
+    height: 54px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rtl #toggle-switcher {
+	left: -54px;
+	right: initial;
+	border-left: 1px solid #ccc;
+    border-right:0;
+}
+#toggle-switcher i {
+    -webkit-animation: rotating 3s linear infinite;
+  -moz-animation: rotating 3s linear infinite;
+  -ms-animation: rotating 3s linear infinite;
+  -o-animation: rotating 3s linear infinite;
+  animation: rotating 3s linear infinite;
+}
+
+.dark #toggle-switcher {
+    background: #333;
+    border: 1px solid #555;
+    border-left: 0;
+}
+
+.dark.rtl #toggle-switcher {
+	 border: 1px solid #555;
+    border-right: 0;
+	
+}
+
+#yellow {
+    background-color: #ffb400;
+}
+#red {
+    background-color: #f72b1c;
+}
+#green {
+    background-color: #72b626;
+}
+#green2 {
+    background-color: #16aba2;
+}
+#blue {
+    background-color: #007bff;
+}
+#blue2 {
+    background-color: #34b5e7;
+}
+#pink {
+    background-color: #ff1466;
+}
+#pink2 {
+    background-color: #fb6977;
+}
+#goldenrod {
+    background-color: #daa520;
+}
+#orange {
+    background-color: #fa5b0f;
+}
